@@ -7,19 +7,40 @@ ____________________________________________________________________*/
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+}
 
+form {
+  max-width: 100%;
+  width: 320px;
+  margin: 0 auto;
+}
+
+h1, h2, p {
+  text-align: center;
 }
 
 h1 {
-
+  background: black;
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 h2 {
-
+  font-weight: 700;
 }
 
 p {
+  font-weight: 300;
+  font-style: italic;
+  padding: 0 20px;
+}
 
+hr {
+  margin: 0 .75rem;
 }
 
 
@@ -27,29 +48,90 @@ p {
     Base Layout Styles
 ____________________________________________________________________*/
 
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
 
+legend {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  padding: 10px 40px;
+  background: rgba(26, 188, 156,1.0);
+  border: 1px solid rgba(22, 160, 133, 1.0);
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  border-radius: 5px;
+}
 
 /*___________________________________________________________________
     Page Elements
 ____________________________________________________________________*/
 
+/* Horizontal Rule Style */
 
+.thick {
+  border: 2px solid #000;
+  margin-top: 30px;
+  margin-bottom: 2px;
+}
+
+.thin {
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+/* Icon Style */
+
+span i {
+  color: #fff;
+  background: rgba(26, 188, 156,1.0);
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 4px;
+  padding-top: 8px;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+.choice {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.format {
+  margin: 30px 0 1px;
+}
+
+
+/* Copyright Style */
+
+.copyright {
+  font-size: .75em;
+}
 
 /*___________________________________________________________________
     Media Queries
 ____________________________________________________________________*/
 
-/* ----- Mobile ----- */
-
-@media screen and (min-width: 320px) {
-
-
-}
-
 
 /* ----- Tablet/Desktop ----- */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 760px) {
 
 
 }

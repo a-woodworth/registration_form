@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Sign Up | The Code Review</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300italic,300'
+    rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
     <form action="index.html" method="post">
-      <h1>The Code Review</h1>
+      <h1>
+        The
+        <i class="fa fa-chevron-left"></i>Code<i class="fa fa-chevron-right"></i>
+        Review
+       </h1>
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
-      <hr>
-      <hr>
+      <hr class="thick">
+      <hr class="thin">
       <fieldset>
-        <legend>Contact Information</legend>
+        <legend>
+          <span><i class="fa fa-user"></i></span>
+          Contact Information
+        </legend>
         <label for="name">Full Name</label><br>
         <input type="text" id="name" name="name" placeholder="Required"><br>
 
@@ -91,39 +101,42 @@
         <input type="text" id="zipcode" name="zipcode"><br>
       </fieldset>
 
-      <hr>
+      <hr class="thin">
 
       <fieldset>
-        <legend>Newsletter</legend>
+        <legend>
+          <span><i class="fa fa-newspaper-o"></i></span>
+          Newsletter
+        </legend>
         <label>Select the newsletters you would like to receive</label><br>
 
         <input type="checkbox" id="newsletter_html" value="newsletter_html"
           name="newsletter" checked="checked">
-        <label for="html_news">HTML News</label><br>
+        <label for="html_news" class="choice">HTML News</label><br>
 
         <input type="checkbox" id="newsletter_css" value="newsletter_css"
           name="newsletter">
-        <label  for="newsletter_css">CSS News</label><br>
+        <label  for="newsletter_css" class="choice">CSS News</label><br>
 
         <input type="checkbox" id="newsletter_javascript"
           value="newsletter_javascript" name="newsletter">
-        <label  for="newsletter_javascript">JavaScript News</label><br>
+        <label  for="newsletter_javascript" class="choice">JavaScript News</label><br>
 
-        <label>Newsletter format</label><br>
+        <label class="format">Newsletter format</label><br>
         <input type="radio" id="html_format" value="html_format"
           name="newsletter_format" checked="checked">
-        <label for="html_format">HTML</label><br>
+        <label for="html_format" class="choice">HTML</label><br>
 
         <input type="radio" id="text_format" value="text_format"
           name="newsletter_format">
-        <label for="text_format">Plain text</label><br>
+        <label for="text_format" class="choice">Plain text</label><br>
 
         <label for="topics">Other topics you'd like to hear about</label><br>
         <textarea id="topics" name="topics"></textarea><br>
       </fieldset>
 
       <button type="submit">Sign Up</button>
-      <p>Copyright The Code Review</p>
+      <p class="copyright">Copyright The Code Review</p>
 
     </form>
 
