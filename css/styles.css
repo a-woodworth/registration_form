@@ -49,8 +49,8 @@ hr {
 ____________________________________________________________________*/
 
 fieldset {
-  margin-bottom: 30px;
   border: none;
+  margin-bottom: 10px;
 }
 
 legend {
@@ -62,6 +62,35 @@ legend {
 label {
   display: block;
   margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 1em;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 15px;
+  background-color: rgba(236, 240, 241,1.0);
+  color: rgba(149, 165, 166,1.0);
+/*  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; */
+  border-radius: 5px;
+}
+
+#zipcode {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+#topics {
+  width: 100%;
+  height: 100px;
+  margin-top: -15px;
 }
 
 button {
@@ -112,10 +141,11 @@ span i {
 .choice {
   display: inline-block;
   font-weight: 300;
+  margin-top: 10px;
 }
 
 .format {
-  margin: 30px 0 1px;
+  margin: 30px 0 .5em;
 }
 
 
