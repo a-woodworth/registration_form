@@ -23,7 +23,7 @@ h1, h2, p {
 h1 {
   background: rgba(44, 62, 80,1.0);
   color: #fff;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 0;
   text-transform: uppercase;
   font-size: 1.5em;
