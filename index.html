@@ -17,23 +17,23 @@
       <hr>
       <fieldset>
         <legend>Contact Information</legend>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="subscriber_name"></input><br>
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Required"><br>
 
-        <label for="email">Email Address</label>
-        <input type="text" id="email" email="subscriber_email"></input><br>
+        <label for="email">Email Address</label><br>
+        <input type="text" id="email" email="email" placeholder="Required"><br>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" phone="subscriber_phone"></input><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" phone="phone"><br>
 
-        <label for="street_address">Street Address</label>
-        <input type="text" id="street_address" name="subscriber_street_address"></input><br>
+        <label for="street_address">Street Address</label><br>
+        <input type="text" id="street_address" name="street_address"/><br>
 
-        <label for="city">City</label>
-        <input type="text" id="city" name="subscriber_city"></input><br>
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city"><br>
 
-        <label for="state">State</label>
-        <select id="state" name="subscriber_state">
+        <label for="state">State</label><br>
+        <select id="state" name="state">
           <option selected="selected">Choose State</option>
           <option value="AL">AL</option>
           <option value="AK">AK</option>
@@ -87,8 +87,8 @@
           <option value="WY">WY</option>
         </select><br>
 
-        <label for="zipcode">Zip Code</label>
-        <input type="text" id="zipcode" name="subscriber_zipcode"></input><br>
+        <label for="zipcode">Zip Code</label><br>
+        <input type="text" id="zipcode" name="zipcode"><br>
       </fieldset>
 
       <hr>
@@ -97,24 +97,29 @@
         <legend>Newsletter</legend>
         <label>Select the newsletters you would like to receive</label><br>
 
-        <input type="checkbox" id="html_news" value="newsletter_html" name="subscriber_newsletter"></input>
+        <input type="checkbox" id="newsletter_html" value="newsletter_html"
+          name="newsletter" checked="checked">
         <label for="html_news">HTML News</label><br>
 
-        <input type="checkbox" id="css_news" value="newsletter_css" name="subscriber_newsletter"></input>
-        <label for="css_news">CSS News</label><br>
+        <input type="checkbox" id="newsletter_css" value="newsletter_css"
+          name="newsletter">
+        <label  for="newsletter_css">CSS News</label><br>
 
-        <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="subscriber_newsletter"></input>
-        <label for="javascript_news">JavaScript News</label><br>
+        <input type="checkbox" id="newsletter_javascript"
+          value="newsletter_javascript" name="newsletter">
+        <label  for="newsletter_javascript">JavaScript News</label><br>
 
         <label>Newsletter format</label><br>
-        <input type="radio" id="html_format" value="html_format" name="subscriber_format">
+        <input type="radio" id="html_format" value="html_format"
+          name="newsletter_format" checked="checked">
         <label for="html_format">HTML</label><br>
 
-        <input type="radio" id="text_format" value="text_format" name="subscriber_format">
+        <input type="radio" id="text_format" value="text_format"
+          name="newsletter_format">
         <label for="text_format">Plain text</label><br>
 
         <label for="topics">Other topics you'd like to hear about</label><br>
-        <textarea id="topics" name="subscriber_topics"></textarea><br>
+        <textarea id="topics" name="topics"></textarea><br>
       </fieldset>
 
       <button type="submit">Sign Up</button>
