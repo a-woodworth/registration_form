@@ -28,10 +28,10 @@
           Contact Information
         </legend>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Required" autofocus><br>
+        <input type="text" id="name" name="name" placeholder="Required" autofocus required><br>
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Required"><br>
+        <input type="email" id="email" name="email" placeholder="Required" required><br>
 
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone"><br>
@@ -137,12 +137,11 @@
         <label for="topics" class="topics">Other topics you'd like to hear about</label><br>
         <textarea id="topics" name="topics"></textarea><br>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit" name="submit" value="Submit Form">Sign Up</button>
       </p>
       <p class="copyright">Copyright The Code Review</p>
 
     </form>
-
   </body>
 </html>
 
