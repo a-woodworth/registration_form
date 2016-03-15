@@ -86,6 +86,7 @@ select {
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   border: 1px solid rgba(52, 73, 94,1.0);
   box-shadow: 0 0 5px 1px rgba(189, 195, 199, 1.0);  /* Glow Effect */
