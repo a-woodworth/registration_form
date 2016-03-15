@@ -11,7 +11,6 @@ body {
 }
 
 form {
-  width: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -64,6 +63,7 @@ legend {
 label {
   display: block;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 input[type="text"],
@@ -92,6 +92,55 @@ textarea:focus {
   background: #fff;
   color: rgba(52, 73, 94,1.0);
 }
+
+
+/* Style for Checkbox & Radio Buttons */
+
+input[type="checkbox"], /* Hide default checkbox/radio styles */
+input[type="radio"]{
+  display: none;
+}
+
+input[type="checkbox"] + label span,          /* Default style when nothing selected */
+input[type="radio"] + label span {
+  display: inline-block;
+  vertical-align: top;
+  width: 1em;
+  height: 1em;
+  border-radius: 5px;
+  background: rgba(236, 240, 241,1.0);
+  margin: 2px 5px 2px 0;
+}
+
+input[type="radio"] + label span {          /* More rounding for radio buttons */
+  border-radius: 50%;
+}
+
+input[type="checkbox"] + label span::before {
+  content: "";
+  display: block;
+}
+
+input[type="checkbox"]:checked + label span::before {   /* Fill with Checkmark */
+  content: '\2713';
+  color: rgba(52, 73, 94,1.0);
+  text-align: center;
+  font-size: .70em;
+}
+
+input[type="radio"]:checked + label span::before {      /* Fill with Bullet */
+  content: '\2022';
+  color: rgba(52, 73, 94,1.0);
+  text-align: center;
+  font-size: 2.25em;
+  line-height: .4em;
+}
+
+input[type="checkbox"]:checked + label span,  /* Add color border when selected */
+input[type="radio"]:checked + label span {
+  border: 2px solid rgba(52, 73, 94,1.0);
+}
+
 
 /* Additions for Placeholder Text Formatting */
 ::-webkit-input-placeholder {   /* Chrome/Opera/Safari */
@@ -188,11 +237,15 @@ button {
   color: #fff;
   font-weight: 500;
   padding: 10px 40px;
-  background: rgba(231, 76, 60,1.0);
+  background: rgba(231, 76, 60, 1.0);
   border: 1px solid rgba(192, 57, 43,1.0);
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 0 5px 15px rgba(231, 76, 60, .4);
 }
 
 
