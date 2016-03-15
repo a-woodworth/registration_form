@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="container">
       <h1>
         The
         <i class="fa fa-chevron-left"></i>Code<i class="fa fa-chevron-right"></i>
         Review
-       </h1>
+      </h1>
+      <div class="container">
       <form action="index.html" method="post">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
         <hr class="thick">
         <hr class="thin">
-        <fieldset>
+        <fieldset class="contact_info">
           <legend>
             <span><i class="fa fa-user"></i></span>
             Contact Information
@@ -98,7 +98,7 @@
           </select><br>
 
           <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="zipcode"><br>
+          <input type="text" id="zipcode" name="zipcode" maxlength="5"><br>
         </fieldset>
 
         <hr class="thin">
@@ -147,7 +147,3 @@
     </div>
   </body>
 </html>
-
-
-
-
